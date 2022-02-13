@@ -9,4 +9,6 @@ def test_button_add_to_basket(browser):
     button = browser.find_element_by_css_selector(".btn-add-to-basket")
     text_add_to_basket = button.text
 
-    assert "Añadir al carrito" == text_add_to_basket, "Other language is selected"
+    assert "Añadir al carrito" == text_add_to_basket, "Other language is selected for this page"
+
+#pytest --language=es test_items.py
